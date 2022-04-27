@@ -27,6 +27,7 @@ router.route('/foodServicesPG')
       const json = await data.json();
       console.log(json);
 
+      // this causes us to need to use dot notation to access our information
       res.json({data: json});
     } catch (err) {
       console.log(error);
